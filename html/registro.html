@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="../css/registro.css">
+</head>
+<body>
+    <header>
+        <h1>Registrarse</h1>
+    </header>
+    <main>
+        <section class="registro-container">
+            <h2>Crea una cuenta nueva</h2>
+            <form id="registro">
+                <div class="form-principal">
+                    <div class="form">
+                        <div class="formulario">
+                            <label for="username">Nombre</label>
+                            <input type="text" id="nombre" name="username" autocomplete="off" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="lastname">Apellido</label>
+                            <input type="text" id="apellido" name="lastname" autocomplete="off" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" autocomplete="off" required>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="formulario">
+                            <label for="country">Pais</label>
+                            <input type="text" name="country" id="pais" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="password">Contraseña</label>
+                            <input type="password" id="password" autocomplete="off" required>
+                        </div>
+                        <div class="formulario">
+                            <label for="confirmPassword">Confirmar Contraseña</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" autocomplete="off" required>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Registrarse" class="registrarse">
+            </form>
+            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesion aqui.</a></p>
+        </section>
+    </main>
+    <footer>
+        <p> 2024 Optimización de Consultas Informáticas. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../js/registro.js"></script>
+</body>
+</html>     

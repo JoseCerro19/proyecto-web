@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios Registrados</title>
+    <link rel="stylesheet" href="../css/UsuRegistrados.css">
+    <script src="../js/barra.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Usuarios Registrados</h1>
+            <nav>
+                <ul>
+                    <li><a href="pag-Admin.html">Inicio</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                    <li><a href="usu-registrados.html">Administrar usuarios</a></li>
+                    <div style="display: none;" id="perfil">
+                        <li><a href="perfil-usuarios.html">Perfil</a></li>
+                    </div>
+                    <li><a id="cerrarSesion">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contenido usuarios-registrados">
+            <h2>Lista de los usuarios registrados</h2>
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Rol</th>
+                        <th>País</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body">
+                    <!-- Usuarios serán agregados aquí dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2024 Optimización de Consultas Informáticas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/UsuRegistrados.js"></script>
+</body>
+</html>
+<script src="../js/usuarios.js"></script>

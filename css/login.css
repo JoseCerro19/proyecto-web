@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px; 
+    background: url('https://img.freepik.com/vector-gratis/diseno-futurista-fondo_23-2148503793.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717372800&semt=ais_user');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px; 
+}
+
+.formulario {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px; 
+}
+
+.inicio {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; 
+}
+
+.inicio:hover {
+    background-color: #218838;
+}
+
+.form-container p {
+    margin-top: 15px;
+}
+
+.form-container a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.registrarse {
+    background-color: #28a745; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 100%; 
+    transition: background-color 0.3s ease; 
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Perfil</h1>
+            <nav>
+                <ul>
+                    <li><a href="pag-Usuario.html">Inicio</a></li>
+                    <li><a href="foro.html">Foro</a></li>
+                    <div style="display: none;" id="tipousuarios">
+                        <li><a href="usu-registrados.html">Administrar usuarios</a></li>
+                    </div>
+                    <li><a href="perfil-usuarios.html">Perfil</a></li>
+                    <li><a id="cerrarSesion">Cerrar Sesión</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile-container">
+            <div class="profile-header">
+                <img src="https://content.wepik.com/statics/20906796/preview-page0.jpg" alt="Foto de perfil" class="profile-pic">
+                <div class="profile-username">Perfil</div>
+            </div>
+            <div class="profile-stats">
+                <div class="stat">
+                    <div class="number">Id</div>
+                    <div class="label">2</div>
+                </div>
+                <div class="stat">
+                    <div class="number">  Nombre</div>
+                    <div class="label">Diego</div>
+                </div>
+                <div class="stat">
+                    <div class="number">Apellido</div>
+                    <div class="label">Vasquez</div>
+                </div>
+            </div>
+            <div class="profile-actions">
+               <button class="btn">Editar perfil</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>2024 Optimización de Consultas Informáticas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="../js/usuarios.js"></script>

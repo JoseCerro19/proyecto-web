@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://img.freepik.com/vector-gratis/diseno-futurista-fondo_23-2148503793.jpg?size=626&ext=jpg&ga=GA1.1.672697106.1717372800&semt=ais_user');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+header, footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 95%;
+    padding: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 60%;
+}
+
+.registro-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.formulario {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 250px;
+}
+
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario input {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registrarse {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.registrarse:hover {
+    background-color: #218838;
+}
+
+.registro-container p {
+    margin-top: 15px;
+}
+
+.registro-container a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.registro-container a:hover {
+    text-decoration: underline;
+}
+
+.form-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.profile-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-header {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.profile-username {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.number {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.label {
+    color: #888;
+    font-size: 14px;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #efefef;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    margin: 0 5px;
+}
+
+.btn i {
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.profile-description {
+    color: #888;
+    font-size: 14px;
+}
