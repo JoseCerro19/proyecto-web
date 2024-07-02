@@ -28,6 +28,7 @@ def insert_table_u(datos):
                 PRIMARY KEY (id)
             )
         """)
+        
         cursor.execute("""
             INSERT INTO registro (nombre, apellido, correo, contraseña)
             VALUES (%s, %s, %s, %s)
