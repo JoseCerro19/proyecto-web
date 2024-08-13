@@ -4,13 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log(datosUsuario);
 
     if (datosUsuario.tipousu === 'administrador') {
-        const botonUsuario = document.getElementById('tipousuarios');
+        const botonUsuario = document.getElementById('tipoUsuarios');
         botonUsuario.style.display = 'block';
     }
 
     if(datosUsuario.tipousu === 'usuario'){
         const botonPerfil = document.getElementById('perfil');
+        const ver = document.getElementById('verUsuario');
         botonPerfil.style.display = 'block';
+        ver.style.display = 'block';
     }
 });
 
@@ -23,5 +25,15 @@ const redirigir = () =>{
         window.location.href = 'pag-Admin.html'
     }else{
         window.location.href = 'pag-Usuario.html'
+    }
+}
+function login(){
+    const Nombre=JSON.parse(localStorage.getItem('Nombre'));
+    if(!Nombre){
+        setTimeout(function(){
+            window.location.href='../index.html';
+        },1000);
+    }else{
+        return true
     }
 }
