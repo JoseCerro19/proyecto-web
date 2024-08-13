@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         email = nombreCompleto.correo;
 
         if (email) {
-            fetch('http://127.0.0.1:5000/obtener_detalles', {  
+            fetch('https://proyecto-web-azure.vercel.app/obtener_detalles', {  
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Contraseña:', contraseña);
         console.log('Biografía:', bio);
 
-        fetch('http://127.0.0.1:5000/actualizar_usuario', { 
+        fetch('https://proyecto-web-azure.vercel.app/actualizar_usuario', { 
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

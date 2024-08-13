@@ -1,6 +1,6 @@
 document.getElementById('edit-user').addEventListener('submit', function (event) {
     event.preventDefault(); 
-    var ruta = 'http://127.0.0.1:5000';
+    var ruta = 'https://proyecto-web-azure.vercel.app';
     var user_id = document.getElementById('edit-user-id').value; 
     var nombre = document.getElementById('edit-nombre').value;
     var apellido = document.getElementById('edit-apellido').value;

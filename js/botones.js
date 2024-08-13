@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para eliminar una publicación
     const deletePost = async (postId) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/eliminar_publicaciones/${postId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/eliminar_publicaciones/${postId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para editar una publicación
     const editPost = async (postId, newContent) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/editar_publicaciones/${postId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/editar_publicaciones/${postId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para eliminar una respuesta
     const deleteReply = async (replyId) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/eliminar_respuestas/${replyId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/eliminar_respuestas/${replyId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para editar una respuesta
     const editReply = async (replyId, newContent) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/editar_respuestas/${replyId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/editar_respuestas/${replyId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para cargar las publicaciones
     const fetchPosts = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/obtener_publicaciones');
+            const response = await fetch('https://proyecto-web-azure.vercel.app/obtener_publicaciones');
             const posts = await response.json();
             postList.innerHTML = '';
             posts.forEach(post => {

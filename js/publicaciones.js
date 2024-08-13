@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para crear una publicación
     const createPost = async (content, idUsuario) => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/publicaciones', {
+            const response = await fetch('https://proyecto-web-azure.vercel.app/publicaciones', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para obtener todas las publicaciones
     const fetchPosts = async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/publicaciones');
+            const response = await fetch('https://proyecto-web-azure.vercel.app/publicaciones');
             if (!response.ok) {
                 throw new Error('Error al obtener las publicaciones');
             }
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para obtener todas las respuestas de una publicación específica
     const fetchReplies = async (postId) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/publicaciones/${postId}/respuestas`);
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/publicaciones/${postId}/respuestas`);
             if (!response.ok) {
                 throw new Error('Error al obtener las respuestas');
             }
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para crear una respuesta
     const createReply = async (content, postId, idUsuario) => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/respuestas', {
+            const response = await fetch('https://proyecto-web-azure.vercel.app/respuestas', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para eliminar una publicación
     const deletePost = async (postId) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/eliminar_publicaciones/${postId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/eliminar_publicaciones/${postId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para editar una publicación
     const editPost = async (postId, newContent) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/editar_publicaciones/${postId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/editar_publicaciones/${postId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para eliminar una respuesta
     const deleteReply = async (replyId) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/eliminar_respuestas/${replyId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/eliminar_respuestas/${replyId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Función para editar una respuesta
     const editReply = async (replyId, newContent) => {
         try {
-            const response = await fetch(`http://127.0.0.1:5000/editar_respuestas/${replyId}`, {
+            const response = await fetch(`https://proyecto-web-azure.vercel.app/editar_respuestas/${replyId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

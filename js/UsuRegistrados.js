@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-    var ruta = 'http://127.0.0.1:5000';
+    var ruta = 'https://proyecto-web-azure.vercel.app';
     const userTableBody = document.getElementById('user-table-body');
     
     function mostrar() {

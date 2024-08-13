@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('http://127.0.0.1:5000/user-stats')
+    fetch('https://proyecto-web-azure.vercel.app/user-stats')
         .then(response => response.json())
         .then(data => {
             const ctx = document.getElementById('userStatsChart').getContext('2d');

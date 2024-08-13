@@ -7,10 +7,10 @@ CORS(app)
 
 # Configuración de la base de datos
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',
-    'db': 'jd',
+    'host': 'bhe7eywp18ocpd44bphu-mysql.services.clever-cloud.com',
+    'user': 'ue1hxs60dwhs48mr',
+    'password': 'uPC021wEA2256mLjNBTR',
+    'db': 'bhe7eywp18ocpd44bphu',
     'cursorclass': pymysql.cursors.DictCursor  # Usar diccionarios para facilitar el manejo de resultados
 }
 

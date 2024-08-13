@@ -1,4 +1,4 @@
-var ruta = 'http://127.0.0.1:5000';
+var ruta = 'https://proyecto-web-azure.vercel.app';
 
 document.getElementById('registroForm').addEventListener('submit', function (event) {
     event.preventDefault();
